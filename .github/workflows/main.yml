@@ -16,13 +16,13 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - name: setup jdk11
+    - name: setup nodejs
       uses: actions/setup-node@v2
       with:
         node-version: '18.16.0'
         
 
-    - name: Insteall Dependences
+    - name: Install Dependencies
       run: npm install
 
     - name: Build react app
